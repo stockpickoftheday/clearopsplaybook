@@ -10,7 +10,7 @@
 <meta property="og:description" content="Ten ready-to-use procedures that cover the everyday running of a small service business — from answering enquiries and onboarding customers to invoicing, hiring and handling complaints. Every SOP is written out in full using a realistic example business, so you can follow it as it stands or adapt the names and numbers to your own business. No blanks to fill in, no jargon — just clear steps your whole team can follow from day one.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clearopsplaybook.com/small-business-sop-kit.html">
-<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <header class="site">
@@ -54,11 +54,19 @@
 <main>
   <div class="wrap">
 
+<div class="product-hero">
+  <div class="hero-text">
 <p class="eyebrow">Small Business</p>
 <h1>Small Business SOP Kit</h1>
 <p class="lede">Ten ready-to-use procedures that cover the everyday running of a small service business — from answering enquiries and onboarding customers to invoicing, hiring and handling complaints. Every SOP is written out in full using a realistic example business, so you can follow it as it stands or adapt the names and numbers to your own business. No blanks to fill in, no jargon — just clear steps your whole team can follow from day one.</p>
 <div class="price-row"><span class="orig-price">$49.99</span><span class="sale-price">$29.99</span><span class="save-badge">40% OFF</span></div>
-<div class="buy-wrap"><a class="buy-btn" href="checkout-soon.html">Buy now — $29.99</a><span class="try-free"><a href="downloads/small-business-sop-kit-free.pdf">Try the free version</a></span></div>
+<div class="buy-wrap"><a class="buy-btn" href="checkout-soon.html">Buy now — $29.99</a><a class="free-btn" href="downloads/small-business-sop-kit-free.pdf">Try the free version</a></div>
+  </div>
+  <figure class="hero-img">
+    <img src="images/small-business-sop-kit-interior.jpg" alt="Inside the Small Business SOP Kit — SOP 01, written out in full" width="816" height="1056">
+    <figcaption>Inside the pack — SOP 01, written out in full</figcaption>
+  </figure>
+</div>
 <p>Running a small business means doing the same important jobs over and over — answering enquiries, taking on new customers, sending invoices, hiring, and sorting out problems when things go wrong. When those jobs live only in the owner&#x27;s head, everything depends on one person, new team members have to guess how things work, and small mistakes turn into lost customers and late payments. The Small Business SOP Kit fixes that with ten complete, ready-to-use procedures that cover the everyday running of a small service business with roughly 1 to 25 people.</p>
 <p>Every procedure is written out in full — never a blank template. Each one sets out its purpose, who does it, and numbered steps with concrete details you can actually follow: reply within four working hours, send a 50% deposit invoice before work starts, chase an overdue invoice on day 1, day 7, day 14 and day 30, and hold check-ins at the end of weeks one, two and four with a new starter. Each SOP also includes a quality check, what to do if it goes wrong, and what records to keep, so nothing is left to chance.</p>
 <p>The procedures are written around Brightline Studio, an invented 6-person design and marketing services business, so every example feels real: the studio manager and lead designer have named roles, customers get welcome emails and kick-off calls, and suppliers are checked, tracked and paid on time. Because the business is fictional, you can adapt the names, amounts and timings to your own business without unpicking anyone else&#x27;s branding. The kit covers the full customer journey and the back office behind it: answering new enquiries, onboarding new customers, handling complaints, invoicing and getting paid, chasing overdue invoices, hiring and onboarding team members, the start-of-day and end-of-day routine, ordering supplies and paying suppliers, posting on social media, and reporting and fixing problems.</p>
@@ -119,5 +127,18 @@
     <p>ClearOps Playbook — SOPs and operations playbooks for small business. Digital downloads only — no subscriptions. All sales of digital downloads are final; every pack has a free version so you can see the quality before you buy. Figures and dates checked November 2026.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var groups = document.querySelectorAll('details.nav-group');
+  groups.forEach(function (g) {
+    g.querySelector('summary').addEventListener('click', function () {
+      groups.forEach(function (o) { if (o !== g) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('nav.main')) groups.forEach(function (g) { g.open = false; });
+  });
+})();
+</script>
 </body>
 </html>

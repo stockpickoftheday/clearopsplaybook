@@ -335,3 +335,47 @@ footer.site nav a {
 }
 footer.site nav a:hover { background: rgba(255, 255, 255, 0.1); color: #fff; }
 footer.site p { margin: 0; }
+
+/* ---------- product hero (product pages) ---------- */
+
+.product-hero { display: flex; flex-direction: column; gap: 24px; margin-bottom: 8px; }
+.product-hero .hero-text { min-width: 0; }
+.product-hero .hero-img { margin: 0; flex: 0 0 auto; }
+.product-hero .hero-img img {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+.product-hero .hero-img figcaption {
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 8px;
+}
+@media (min-width: 760px) {
+  .product-hero { flex-direction: row; align-items: flex-start; gap: 32px; }
+  .product-hero .hero-text { flex: 1 1 0; }
+  .product-hero .hero-img { flex: 0 0 320px; }
+  .product-hero .hero-img img { max-width: 320px; }
+}
+
+/* free-version button beside the buy button (product pages) */
+.hero-text .buy-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.free-btn {
+  display: inline-block;
+  background: var(--green-700);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 28px;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+.free-btn:hover { background: var(--green-600); color: #fff; }

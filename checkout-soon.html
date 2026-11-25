@@ -10,7 +10,7 @@
 <meta property="og:description" content="Checkout is coming soon to ClearOps Playbook. In the meantime, download the free version of any pack to see the quality.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clearopsplaybook.com/checkout-soon.html">
-<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <header class="site">
@@ -102,5 +102,18 @@
     <p>ClearOps Playbook — SOPs and operations playbooks for small business. Digital downloads only — no subscriptions. All sales of digital downloads are final; every pack has a free version so you can see the quality before you buy. Figures and dates checked November 2026.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var groups = document.querySelectorAll('details.nav-group');
+  groups.forEach(function (g) {
+    g.querySelector('summary').addEventListener('click', function () {
+      groups.forEach(function (o) { if (o !== g) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('nav.main')) groups.forEach(function (g) { g.open = false; });
+  });
+})();
+</script>
 </body>
 </html>

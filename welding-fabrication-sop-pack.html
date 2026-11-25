@@ -10,7 +10,7 @@
 <meta property="og:description" content="Ten ready-to-use procedures for a small welding shop, written out in full around Northgate Welding &amp; Fabrication, a three-person shop making gates, railings and custom steelwork. It covers the whole job from first enquiry and site visit through quoting, deposits, safety checks, cutting, welding, finishing, fitting, handover and rework — with real numbers, real safety steps and a quality check on every procedure. No blanks to fill in: print it, edit it, or use it as it is.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clearopsplaybook.com/welding-fabrication-sop-pack.html">
-<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <header class="site">
@@ -54,11 +54,19 @@
 <main>
   <div class="wrap">
 
+<div class="product-hero">
+  <div class="hero-text">
 <p class="eyebrow">Welding &amp; Fabrication</p>
 <h1>Welding &amp; Fabrication SOP Pack</h1>
 <p class="lede">Ten ready-to-use procedures for a small welding shop, written out in full around Northgate Welding &amp; Fabrication, a three-person shop making gates, railings and custom steelwork. It covers the whole job from first enquiry and site visit through quoting, deposits, safety checks, cutting, welding, finishing, fitting, handover and rework — with real numbers, real safety steps and a quality check on every procedure. No blanks to fill in: print it, edit it, or use it as it is.</p>
 <div class="price-row"><span class="orig-price">$49.99</span><span class="sale-price">$29.99</span><span class="save-badge">40% OFF</span></div>
-<div class="buy-wrap"><a class="buy-btn" href="checkout-soon.html">Buy now — $29.99</a><span class="try-free"><a href="downloads/welding-fabrication-sop-pack-free.pdf">Try the free version</a></span></div>
+<div class="buy-wrap"><a class="buy-btn" href="checkout-soon.html">Buy now — $29.99</a><a class="free-btn" href="downloads/welding-fabrication-sop-pack-free.pdf">Try the free version</a></div>
+  </div>
+  <figure class="hero-img">
+    <img src="images/welding-fabrication-sop-pack-interior.jpg" alt="Inside the Welding &amp; Fabrication SOP Pack — SOP 01, written out in full" width="816" height="1056">
+    <figcaption>Inside the pack — SOP 01, written out in full</figcaption>
+  </figure>
+</div>
 <p>Running a small welding shop means juggling enquiries, quotes, cutting lists, welding, painting, fitting and paperwork — usually with only two or three people and no office manager to keep it all straight. The Welding &amp; Fabrication SOP Pack gives your shop a written way of doing every job, from the first phone call to the final sign-off, so nothing gets missed and everyone works the same way. The pack follows one invented example business, Northgate Welding &amp; Fabrication, a three-person shop making gates, railings and custom steelwork.</p>
 <p>Every procedure is written out in full around that shop, with real numbers, real steps and real decisions — not blank templates for you to fill in yourself. You can use the procedures as they are, or change the names, prices and timings to match your own shop. Inside you will find ten procedures that cover the whole life of a job.</p>
 <p>It starts with handling a customer enquiry and doing a proper site visit, then pricing the job and writing a clear quote. It covers taking a deposit and ordering steel, the daily safety and hot work check, cutting and fitting up, welding and inspection, grinding and painting, and getting the finished work to site and fitted square and level. It finishes with handover and sign-off, collecting the final payment, and handling changes, defects and rework when things do not go to plan.</p>
@@ -120,5 +128,18 @@
     <p>ClearOps Playbook — SOPs and operations playbooks for small business. Digital downloads only — no subscriptions. All sales of digital downloads are final; every pack has a free version so you can see the quality before you buy. Figures and dates checked November 2026.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var groups = document.querySelectorAll('details.nav-group');
+  groups.forEach(function (g) {
+    g.querySelector('summary').addEventListener('click', function () {
+      groups.forEach(function (o) { if (o !== g) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('nav.main')) groups.forEach(function (g) { g.open = false; });
+  });
+})();
+</script>
 </body>
 </html>

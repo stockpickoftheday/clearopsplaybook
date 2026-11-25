@@ -10,7 +10,7 @@
 <meta property="og:description" content="Ready-to-use SOPs and operations playbooks for small business — workshop, welding, childcare, restaurant, catering, privacy, ISO 13485 and more. Every pack has a free version to try first.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clearopsplaybook.com/">
-<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="style.css?v=2">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -91,8 +91,8 @@
 <li>Markdown version (.md, editable)</li>
 </ul>
 </div></details>
-<div class="price-row"><span class="orig-price">$49.99</span><span class="sale-price">$29.99</span><span class="save-badge">40% OFF</span></div>
-<div class="buy-wrap"><a class="buy-btn" href="checkout-soon.html">Buy now — $29.99</a><span class="try-free"><a href="downloads/workshop-sop-pack-free.pdf">Try the free version</a></span></div>
+<div class="price-row"><span class="orig-price">$29.99</span><span class="sale-price">$9.99</span><span class="save-badge">67% OFF</span></div>
+<div class="buy-wrap"><a class="buy-btn" href="checkout-soon.html">Buy now — $9.99</a><span class="try-free"><a href="downloads/workshop-sop-pack-free.pdf">Try the free version</a></span></div>
 </article>
 <article class="product-card">
 <h3><a href="welding-fabrication-sop-pack.html">Welding &amp; Fabrication SOP Pack</a></h3>
@@ -360,5 +360,18 @@
     <p>ClearOps Playbook — SOPs and operations playbooks for small business. Digital downloads only — no subscriptions. All sales of digital downloads are final; every pack has a free version so you can see the quality before you buy. Figures and dates checked November 2026.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var groups = document.querySelectorAll('details.nav-group');
+  groups.forEach(function (g) {
+    g.querySelector('summary').addEventListener('click', function () {
+      groups.forEach(function (o) { if (o !== g) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('nav.main')) groups.forEach(function (g) { g.open = false; });
+  });
+})();
+</script>
 </body>
 </html>

@@ -10,7 +10,7 @@
 <meta property="og:description" content="Ten ready-to-use procedures for a small daycare, written out in full — no blanks to fill in. From the morning safety check to sign-in, meals and allergies, sleep time, accidents, medicine, fire drills, and closing up, every step is set out in plain English around one example setting: Little Acorns Daycare, 24 children and 6 staff. Print it, hand it to your team, and run the day the same safe way, every day.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clearopsplaybook.com/childcare-sop-pack.html">
-<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <header class="site">
@@ -54,11 +54,19 @@
 <main>
   <div class="wrap">
 
+<div class="product-hero">
+  <div class="hero-text">
 <p class="eyebrow">Childcare</p>
 <h1>Childcare SOP Pack</h1>
 <p class="lede">Ten ready-to-use procedures for a small daycare, written out in full — no blanks to fill in. From the morning safety check to sign-in, meals and allergies, sleep time, accidents, medicine, fire drills, and closing up, every step is set out in plain English around one example setting: Little Acorns Daycare, 24 children and 6 staff. Print it, hand it to your team, and run the day the same safe way, every day.</p>
 <div class="price-row"><span class="orig-price">$99.99</span><span class="sale-price">$59.99</span><span class="save-badge">40% OFF</span></div>
-<div class="buy-wrap"><a class="buy-btn" href="checkout-soon.html">Buy now — $59.99</a><span class="try-free"><a href="downloads/childcare-sop-pack-free.pdf">Try the free version</a></span></div>
+<div class="buy-wrap"><a class="buy-btn" href="checkout-soon.html">Buy now — $59.99</a><a class="free-btn" href="downloads/childcare-sop-pack-free.pdf">Try the free version</a></div>
+  </div>
+  <figure class="hero-img">
+    <img src="images/childcare-sop-pack-interior.jpg" alt="Inside the Childcare SOP Pack — SOP 01, written out in full" width="816" height="1056">
+    <figcaption>Inside the pack — SOP 01, written out in full</figcaption>
+  </figure>
+</div>
 <p>Running a small daycare means the same important jobs have to be done right every single day: opening the rooms safely, signing children in and out, changing nappies, serving food, settling children to sleep, and knowing exactly what to do when something goes wrong. The Childcare SOP Pack gives you ten ready-to-use procedures that cover the whole day at Little Acorns Daycare, a small daycare for 24 children with 6 staff, from the morning safety check at 7:30 am to the final lock-up at the end of the day. Every procedure is written out in full, in plain, simple English, with realistic details your staff can follow straight away — no blanks to fill in, no jargon, and no guessing.</p>
 <p>Each SOP follows the same clear structure, so staff always know where to look: Purpose, Scope, Who does it, numbered Steps, a Quality check, If it goes wrong, and Records. That means a new member of staff can pick up a procedure and follow it on their first day, and a manager can check that the work was done properly just by reading the record at the end of it. The pack covers the routines that matter most in a childcare setting.</p>
 <p>It starts with opening checks and arrival, then moves through collection and authorised pickups, nappy changing and hygiene, meals, snacks and allergies, and sleep and rest time. It also covers the harder moments: accidents and incident reporting, giving medicine safely with two signatures, fire drills and evacuation, and end-of-day closing and handover. Because every example uses the same invented setting — Little Acorns Daycare, 24 children, 6 staff — the procedures read as one joined-up set, not ten separate documents.</p>
@@ -122,5 +130,18 @@
     <p>ClearOps Playbook — SOPs and operations playbooks for small business. Digital downloads only — no subscriptions. All sales of digital downloads are final; every pack has a free version so you can see the quality before you buy. Figures and dates checked November 2026.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var groups = document.querySelectorAll('details.nav-group');
+  groups.forEach(function (g) {
+    g.querySelector('summary').addEventListener('click', function () {
+      groups.forEach(function (o) { if (o !== g) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('nav.main')) groups.forEach(function (g) { g.open = false; });
+  });
+})();
+</script>
 </body>
 </html>

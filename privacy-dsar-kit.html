@@ -10,7 +10,7 @@
 <meta property="og:description" content="When a customer asks what data you hold about them — or asks you to delete it or fix it — you need an answer fast, and it has to be the right one. This kit gives you ten ready-to-use procedures that walk a small business through every kind of data request, from logging it on day one to answering it, deleting data, handling a breach, and training staff. Every procedure is written out in full using an example business, Fern &amp; Field Coaching, so you can follow it as-is and adapt the names to your own business. No blanks, no legal jargon — just plain steps with deadlines, checks, and what to do when things go wrong.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clearopsplaybook.com/privacy-dsar-kit.html">
-<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <header class="site">
@@ -54,11 +54,19 @@
 <main>
   <div class="wrap">
 
+<div class="product-hero">
+  <div class="hero-text">
 <p class="eyebrow">Privacy</p>
 <h1>Privacy &amp; Data Request Kit</h1>
 <p class="lede">When a customer asks what data you hold about them — or asks you to delete it or fix it — you need an answer fast, and it has to be the right one. This kit gives you ten ready-to-use procedures that walk a small business through every kind of data request, from logging it on day one to answering it, deleting data, handling a breach, and training staff. Every procedure is written out in full using an example business, Fern &amp; Field Coaching, so you can follow it as-is and adapt the names to your own business. No blanks, no legal jargon — just plain steps with deadlines, checks, and what to do when things go wrong.</p>
 <div class="price-row"><span class="orig-price">$99.99</span><span class="sale-price">$59.99</span><span class="save-badge">40% OFF</span></div>
-<div class="buy-wrap"><a class="buy-btn" href="checkout-soon.html">Buy now — $59.99</a><span class="try-free"><a href="downloads/privacy-dsar-kit-free.pdf">Try the free version</a></span></div>
+<div class="buy-wrap"><a class="buy-btn" href="checkout-soon.html">Buy now — $59.99</a><a class="free-btn" href="downloads/privacy-dsar-kit-free.pdf">Try the free version</a></div>
+  </div>
+  <figure class="hero-img">
+    <img src="images/privacy-dsar-kit-interior.jpg" alt="Inside the Privacy &amp; Data Request Kit — SOP 01, written out in full" width="816" height="1056">
+    <figcaption>Inside the pack — SOP 01, written out in full</figcaption>
+  </figure>
+</div>
 <p>Sooner or later, a customer will ask what personal data you hold about them. It might be a simple email — &quot;what do you have on me?&quot; — or a formal request for a copy of everything, a correction, or a full deletion. However it arrives, you have to spot it, answer it on time, and prove what you did.</p>
 <p>Guessing your way through it risks missing the deadline, sharing data with the wrong person, or deleting something you needed to keep. This kit takes that worry away. It contains ten complete procedures that cover the whole journey of a data request, written in plain English and filled in with realistic detail — no blank templates, no boxes left for you to work out.</p>
 <p>Each one follows the same small business throughout: Fern &amp; Field Coaching, a two-person coaching business with a client list, an email list and an online booking system. You read the procedure, swap in your own business details, and follow the steps. You start by taking the request in properly: logging it the same day, starting the deadline clock, and acknowledging it within two working days.</p>
@@ -122,5 +130,18 @@
     <p>ClearOps Playbook — SOPs and operations playbooks for small business. Digital downloads only — no subscriptions. All sales of digital downloads are final; every pack has a free version so you can see the quality before you buy. Figures and dates checked November 2026.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var groups = document.querySelectorAll('details.nav-group');
+  groups.forEach(function (g) {
+    g.querySelector('summary').addEventListener('click', function () {
+      groups.forEach(function (o) { if (o !== g) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('nav.main')) groups.forEach(function (g) { g.open = false; });
+  });
+})();
+</script>
 </body>
 </html>

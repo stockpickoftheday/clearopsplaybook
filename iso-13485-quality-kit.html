@@ -10,7 +10,7 @@
 <meta property="og:description" content="Ten complete quality procedures for a very small medical-device maker — complaints, regulator reporting, post-market surveillance, recalls, CAPA, document control, supplier checks, internal audit, and training. Written out in full in plain English, using one invented example business, a five-person maker of a reusable instrument tray, so you can see exactly how each procedure works in real life.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clearopsplaybook.com/iso-13485-quality-kit.html">
-<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <header class="site">
@@ -54,11 +54,19 @@
 <main>
   <div class="wrap">
 
+<div class="product-hero">
+  <div class="hero-text">
 <p class="eyebrow">Medical Devices</p>
 <h1>ISO 13485 Quality Kit</h1>
 <p class="lede">Ten complete quality procedures for a very small medical-device maker — complaints, regulator reporting, post-market surveillance, recalls, CAPA, document control, supplier checks, internal audit, and training. Written out in full in plain English, using one invented example business, a five-person maker of a reusable instrument tray, so you can see exactly how each procedure works in real life.</p>
 <div class="price-row"><span class="orig-price">$99.99</span><span class="sale-price">$59.99</span><span class="save-badge">40% OFF</span></div>
-<div class="buy-wrap"><a class="buy-btn" href="checkout-soon.html">Buy now — $59.99</a><span class="try-free"><a href="downloads/iso-13485-quality-kit-free.pdf">Try the free version</a></span></div>
+<div class="buy-wrap"><a class="buy-btn" href="checkout-soon.html">Buy now — $59.99</a><a class="free-btn" href="downloads/iso-13485-quality-kit-free.pdf">Try the free version</a></div>
+  </div>
+  <figure class="hero-img">
+    <img src="images/iso-13485-quality-kit-interior.jpg" alt="Inside the ISO 13485 Quality Kit — SOP 01, written out in full" width="816" height="1056">
+    <figcaption>Inside the pack — SOP 01, written out in full</figcaption>
+  </figure>
+</div>
 <p>Making a simple medical device is one thing. Proving you have a proper quality system behind it is another — and that is exactly what hospitals, distributors, and regulators ask about first. The ISO 13485 Quality Kit gives a very small manufacturer ten complete, ready-to-use procedures that cover the whole quality system, from the first customer complaint to the yearly internal audit.</p>
 <p>Nothing is left as a blank template. Every procedure is written out in full, in plain English, using one invented example business all the way through: Medivance Devices Ltd, a five-person company making a reusable stainless-steel instrument tray. You can follow the example as it stands, or swap in your own company name, product, and job titles — the steps still work.</p>
 <p>The kit starts where most small makers feel the pressure first: complaints. It shows how to log a complaint the same day, answer the customer within two working days, investigate the batch, and close the case properly. Then it shows how to look at complaints over three months and a full year, so a repeating fault — rust spots, a lid that will not close, a sharp edge — is spotted and fixed before it becomes a serious problem.</p>
@@ -122,5 +130,18 @@
     <p>ClearOps Playbook — SOPs and operations playbooks for small business. Digital downloads only — no subscriptions. All sales of digital downloads are final; every pack has a free version so you can see the quality before you buy. Figures and dates checked November 2026.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var groups = document.querySelectorAll('details.nav-group');
+  groups.forEach(function (g) {
+    g.querySelector('summary').addEventListener('click', function () {
+      groups.forEach(function (o) { if (o !== g) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('nav.main')) groups.forEach(function (g) { g.open = false; });
+  });
+})();
+</script>
 </body>
 </html>
