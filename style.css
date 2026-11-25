@@ -368,7 +368,7 @@ footer.site p { margin: 0; }
 .hero-text .buy-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .free-btn {
   display: inline-block;
-  background: var(--green-700);
+  background: #2e7d32;
   color: #fff;
   font-size: 1.1rem;
   font-weight: 800;
@@ -378,4 +378,4 @@ footer.site p { margin: 0; }
   border-radius: 999px;
   box-shadow: var(--shadow);
 }
-.free-btn:hover { background: var(--green-600); color: #fff; }
+.free-btn:hover { background: #388e3c; color: #fff; }
